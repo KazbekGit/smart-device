@@ -93,6 +93,7 @@ const syncServer = () => {
     open: true,
     cors: true,
     ui: false,
+    browser: 'chrome',
   });
 
   gulp.watch('source/**.html', gulp.series(copy, refresh));

@@ -384,12 +384,38 @@ template {
   display: none;
 }
 
+/* pt-mono latin-regular */
+
 @font-face {
+  font-family: "PT Mono";
   font-style: normal;
   font-weight: 400;
-  font-family: "";
+  src: url("../fonts/pt-mono-v13-latin-regular.woff2") format("woff2"), url("../fonts/pt-mono-v13-latin-regular.woff") format("woff");
   font-display: swap;
-  src: url("../fonts/.woff2") format("woff2"), url("../fonts/.woff") format("woff");
+}
+
+/* roboto-condensed-700 latin */
+
+@font-face {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/roboto-condensed-v25-latin-700.woff2") format("woff2"), url("../fonts/roboto-condensed-v25-latin-700.woff.woff") format("woff");
+  font-display: swap;
+}
+
+/* roboto-condensed latin-regular */
+
+@font-face {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-condensed-v25-latin-regular.woff2") format("woff2"), url("../fonts/roboto-condensed-v25-latin-regular.woff") format("woff");
+  font-display: swap;
+}
+
+body {
+  font-family: 'Roboto Condensed', 'Times New Roman', Times, serif;
 }
 
 *,
