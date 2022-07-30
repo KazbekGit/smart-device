@@ -1,0 +1,25 @@
+.main-header {
+  font-family: 'PT Mono';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+
+  color: $color-alice-blue;
+  background: linear-gradient(180deg, $color-black-pearl 84.9%, $color-black-pearl-transparent 100%);
+}
+
+.main-header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  min-height: 120px;
+
+  @include vp-1919 {
+    padding: 0 100px;
+  }
+}
+
+
