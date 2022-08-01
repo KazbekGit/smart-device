@@ -11,13 +11,15 @@
 @import "variables";
 @import "mixins";
 @import "global/fonts";
-@import "global/global.scss";
 @import "global/reboot";
 @import "global/utils";
 @import "global/container";
 @import "blocks/main-header";
 @import "blocks/logo";
 @import "blocks/contacts";
+@import "blocks/popup";
+@import "blocks/form";
+@import "global/global.scss";
 
 // Blocks
 // ---------------------------------

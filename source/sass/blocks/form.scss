@@ -1,0 +1,127 @@
+.form fieldset {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+
+  padding: 0;
+  margin: 0;
+
+  border: none;
+}
+
+.form header {
+  font-family: $ff-roboto;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 42px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.form p {
+  margin: 0;
+  padding: 0;
+
+  margin-top: 10px;
+  margin-bottom: 40px;
+  padding-right: 50px;
+}
+
+.form input,
+.form textarea {
+  border: none;
+
+  color: $color-default-white;
+  background-color: rgba(4, 20, 39, 0.15);
+}
+
+.form input::placeholder,
+.form textarea::placeholder {
+   color: $color-default-white;
+}
+
+.form input {
+  padding: 0 15px;
+  min-height: 50px;
+}
+
+.form textarea {
+  padding: 25px 15px;
+  height: 155px;
+}
+
+.form label {
+  position:relative;
+
+  padding-left: 44px;
+  padding-right: 15px;
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.form label:hover {
+  cursor: pointer;
+}
+
+.form label::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+
+  width: 15px;
+  height: 15px;
+
+  border: 1px solid $color-default-white;
+  border-radius: 2px;
+
+  background-color: transparent;
+}
+
+.form input[type="checkbox"] {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.form input[type="checkbox"]:checked + label::before {
+  position: absolute;
+  content: "";
+  left: 3px;
+  top: 4px;
+
+  width: 7px;
+  height: 4px;
+
+  border: 1px solid $color-default-white;
+  border-top: none;
+  border-right: none;
+
+  transform: rotate(-45deg);
+  background-color: transparent;
+}
+
+.form input[type="checkbox"]:focus + label::after {
+  outline: 2px solid $color-default-black;
+}
+
+.form button {
+  min-height: 45px;
+
+  font-family: $ff-roboto;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+  text-align: center;
+
+  border: none;
+  text-transform: uppercase;
+
+  color: $color-default-white;
+  background-color: $color-black-pearl;
+}

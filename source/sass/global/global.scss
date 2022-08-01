@@ -1,3 +1,21 @@
 body {
-  font-family: 'Roboto Condensed', 'Times New Roman', Times, serif;
+  font-family: $ff-PT-mono;
+}
+
+.overlay {
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $color-overlay;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.closed {
+  display: none;
 }
