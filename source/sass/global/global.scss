@@ -1,4 +1,9 @@
-body {
+.page-body {
+  display: flex;
+  flex-direction: column;
+
+  min-width: $min-width;
+
   font-family: $ff-PT-mono;
 }
 
@@ -19,3 +24,8 @@ body {
 .closed {
   display: none;
 }
+
+.nojs {
+  display: block;
+}
+
