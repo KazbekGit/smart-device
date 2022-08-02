@@ -1,4 +1,5 @@
 import {noJSElements} from './elements';
+import {footerHeaderBlocks} from './elements';
 
 const disablePageScroll = () => {
   document.body.style.overflow = 'hidden';
@@ -15,8 +16,10 @@ const removeNoJS = () => {
 };
 
 const addPluses = () => {
-  
-}
+  footerHeaderBlocks.forEach((elem) => {
+    elem.classList.add('footer__header-block--add-plus');
+  });
+};
 
-export {disablePageScroll, enablePageScroll, removeNoJS};
+export {disablePageScroll, enablePageScroll, removeNoJS, addPluses};
 

@@ -2,6 +2,8 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {togglePopup} from './modules/popup-toggle';
 import {removeNoJS} from './utils/utils';
+import {addPluses} from './utils/utils';
+import {togglePlus} from './modules/plus-toggle';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -11,8 +13,10 @@ window.addEventListener('DOMContentLoaded', () => {
 
   iosVhFix();
   removeNoJS();
+  addPluses();
   // Modules
   togglePopup();
+  togglePlus();
   // ---------------------------------
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
