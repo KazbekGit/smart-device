@@ -3,7 +3,7 @@ import {initModals} from './modules/modals/init-modals';
 import {togglePopup} from './modules/popup-toggle';
 import {removeNoJS} from './utils/utils';
 import {addPluses} from './utils/utils';
-import {togglePlus} from './modules/plus-toggle';
+import {accorionToggle} from './modules/footer-accordion';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -16,7 +16,7 @@ window.addEventListener('DOMContentLoaded', () => {
   addPluses();
   // Modules
   togglePopup();
-  togglePlus();
+  accorionToggle();
   // ---------------------------------
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'

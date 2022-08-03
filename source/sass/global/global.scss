@@ -25,7 +25,13 @@
   display: none;
 }
 
-.nojs {
-  display: block;
+.closed-list {
+  @include vp-767 {
+    display: none;
+  }
 }
+
+/* .nojs {
+  display: block;
+} */
 
