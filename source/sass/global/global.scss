@@ -35,3 +35,9 @@
   display: block;
 } */
 
+.hide-on-mobile {
+  @include vp-767 {
+    display: none;
+  }
+}
+

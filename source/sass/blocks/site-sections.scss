@@ -30,7 +30,9 @@
 }
 
 .site-sections__item:nth-child(4n) {
-  margin-bottom: 0;
+  @media (min-width: $vp-1024) {
+    margin-bottom: 0;
+  }
 }
 
 
