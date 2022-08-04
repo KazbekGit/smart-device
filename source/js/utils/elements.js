@@ -7,6 +7,8 @@ const userName = document.querySelector('#name');
 const noJSElements = document.querySelectorAll('.nojs');
 const footerHeaderBlocks = document.querySelectorAll('.footer__header-block');
 const footerContainer = document.querySelector('.footer__container');
+const addTextButton = document.querySelector('.about-us__button');
+const hidedText = document.querySelector('.about-us__description--hide');
 
-export {popupToggle, popup, overlay, popupCloser, userPhone, userName, noJSElements, footerHeaderBlocks, footerContainer};
+export {popupToggle, popup, overlay, popupCloser, userPhone, userName, noJSElements, footerHeaderBlocks, footerContainer, addTextButton, hidedText};
 
