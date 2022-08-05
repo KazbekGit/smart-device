@@ -787,13 +787,10 @@ button,
 }
 
 .form fieldset {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
   row-gap: 20px;
   padding: 0;
   margin: 0;
@@ -860,6 +857,14 @@ button,
 }
 
 .form label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   position: relative;
   padding-left: 44px;
   padding-right: 15px;
@@ -1411,6 +1416,77 @@ button,
   text-align: left;
 }
 
+.feedback {
+  color: #ffffff;
+  background: -o-linear-gradient(311deg, rgba(4, 24, 39, 0.5) 33.5%, transparent 33.6%);
+  background: linear-gradient(139deg, rgba(4, 24, 39, 0.5) 33.5%, transparent 33.6%);
+  background-color: #00b3ff;
+}
+
+.feedback__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  padding-top: 170px;
+  padding-bottom: 250px;
+  padding-right: 360px;
+  background-image: url("../img/paper-airplane.webp");
+  background-repeat: no-repeat;
+  background-position: 350px 246px;
+}
+
+.feedback__form header {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 42px;
+}
+
+.feedback__form fieldset {
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-column-gap: 30px;
+  -moz-column-gap: 30px;
+  column-gap: 30px;
+  row-gap: 20px;
+  width: 580px;
+}
+
+.feedback__form textarea {
+  -ms-grid-column: 1;
+  grid-column-start: 1;
+  -ms-grid-column-span: -2;
+  grid-column-end: -1;
+}
+
+.feedback__form label {
+  padding-left: 30px;
+  margin-left: 20px;
+}
+
+.feedback__form label::after {
+  top: calc(50% - 8px);
+}
+
+.form input[type="checkbox"]:checked + label::before {
+  top: calc(50% - 4px);
+}
+
+.feedback__form button {
+  margin-top: 15px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 .page-body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1666,6 +1742,12 @@ button,
     padding-left: 100px;
     padding-right: 100px;
   }
+
+  .feedback__container {
+    padding-right: 100px;
+    background-size: 25%;
+    background-position: 50px 346px;
+  }
 }
 
 @media (max-width: 1023px) {
@@ -1779,6 +1861,16 @@ button,
     -o-object-fit: cover;
     object-fit: cover;
   }
+
+  .feedback__container {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 125px;
+    background-image: none;
+    background: #00b3ff;
+  }
 }
 
 @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1023px) and (min-resolution: 1.5dppx) {
@@ -1818,6 +1910,7 @@ button,
     -ms-flex-pack: start;
     justify-content: start;
     row-gap: 0;
+    padding-top: 35px;
     padding-bottom: 35px;
     padding-left: 0;
     padding-right: 0;
@@ -1974,6 +2067,19 @@ button,
   .offers__card img {
     min-width: 0;
     width: 270px;
+  }
+
+  .feedback__container {
+    padding-top: 50px;
+    padding-bottom: 90px;
+  }
+
+  .feedback__form fieldset {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    width: 100%;
   }
 
   .closed-list {

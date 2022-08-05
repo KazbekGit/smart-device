@@ -5,6 +5,7 @@ import {removeNoJS} from './utils/utils';
 import {addPluses} from './utils/utils';
 import {accorionToggle} from './modules/footer-accordion';
 import {addText} from './modules/add-text-toggle';
+import {setPhoneMask} from './modules/phone-mask';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -19,6 +20,8 @@ window.addEventListener('DOMContentLoaded', () => {
   togglePopup();
   accorionToggle();
   addText();
+  setPhoneMask();
+
   // ---------------------------------
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'

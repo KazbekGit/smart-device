@@ -8,6 +8,12 @@ const isEscKeyDown = (evt) => {
   }
 };
 
+const isEnterKeyDown = (evt) => {
+  if (evt.key === 'Enter') {
+    closePopup();
+  }
+};
+
 const onEscKeyDown = () => {
   document.addEventListener('keydown', isEscKeyDown, false);
 };
@@ -26,6 +32,7 @@ const openPopup = () => {
 
   overlay.addEventListener('click', closePopup, false);
   popupCloser.addEventListener('click', closePopup, false);
+  popupCloser.addEventListener('keydown', isEnterKeyDown, false);
 };
 
 const closePopup = () => {
@@ -39,6 +46,7 @@ const closePopup = () => {
   overlay.removeEventListener('click', closePopup, false);
   popupCloser.removeEventListener('click', closePopup, false);
   document.removeEventListener('keydown', isEscKeyDown, false);
+  popupCloser.addEventListener('keydown', isEnterKeyDown, false);
 };
 
 const togglePopup = () => {

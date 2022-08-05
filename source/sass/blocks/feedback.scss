@@ -1,0 +1,88 @@
+.feedback {
+  color: $color-default-white;
+
+  background: linear-gradient(139deg, $color-black-pearl-50 33.5%, transparent 33.6%);
+  background-color: $color-deep-sky-blue;
+}
+
+.feedback__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+
+  padding-top: 170px;
+  padding-bottom: 250px;
+  padding-right: 360px;
+
+  background-image: url('../img/paper-airplane.webp');
+  background-repeat: no-repeat;
+  background-position: 350px 246px;
+
+  @include vp-1919 {
+    padding-right: 100px;
+
+    background-size: 25%;
+    background-position: 50px 346px;
+
+  }
+
+  @include vp-1023 {
+    justify-content: center;
+
+    padding-top: 50px;
+    padding-bottom: 125px;
+
+    background-image: none;
+    background: $color-deep-sky-blue;
+  }
+
+  @include vp-767 {
+    padding-top: 50px;
+    padding-bottom: 90px;
+  }
+}
+
+.feedback__form header {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 42px;
+}
+
+.feedback__form fieldset{
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  column-gap: 30px;
+  row-gap: 20px;
+
+  width: 580px;
+
+  @include vp-767 {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    width: 100%;
+  }
+}
+
+.feedback__form textarea {
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+
+.feedback__form label{
+  padding-left: 30px;
+  margin-left: 20px;
+
+}
+
+.feedback__form label::after {
+  top: calc(50% - 8px);
+}
+
+.form input[type="checkbox"]:checked + label::before {
+  top: calc(50% - 4px);
+}
+
+.feedback__form button {
+  margin-top: 15px;
+}
