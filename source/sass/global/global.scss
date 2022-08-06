@@ -45,3 +45,10 @@ html {
   }
 }
 
+.hide-on-tablet-desktop {
+  display: none;
+  @include vp-767 {
+    display: block;
+  }
+}
+

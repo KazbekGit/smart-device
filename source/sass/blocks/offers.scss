@@ -1,6 +1,6 @@
 .offers {
-  padding-top: 70px;
-  padding-bottom: 140px;
+  padding-top: 67px;
+  padding-bottom: 141px;
 
   font-family: $ff-roboto;
   font-size: 36px;
@@ -12,9 +12,14 @@
   color: $color-default-white;
   background-color: $color-black-pearl;
 
+  @include vp-1023 {
+    padding-top: 56px;
+    padding-bottom: 75px;
+  }
+
   @include vp-767 {
-    padding-top: 50px;
-    padding-bottom: 86px;
+    padding-top: 47px;
+    padding-bottom: 85px;
   }
 }
 
@@ -43,7 +48,7 @@
   padding: 0;
   margin: 0;
   margin: 0 auto;
-  margin-bottom: 50px;
+  margin-bottom: 52px;
   padding-left: 350px;
   padding-right: 350px;
 
@@ -59,6 +64,7 @@
 
   @include vp-1023 {
     padding: 0 50px;
+    margin-bottom: 37px;
   }
 
   @include vp-767 {
@@ -70,8 +76,6 @@
 
 .offers__header--mobile {
   display: none;
-  padding: 0 25px;
-
   font-size: 28px;
   font-weight: 400;
   line-height: 39px;
@@ -79,6 +83,12 @@
 
   @include vp-767 {
     display: block;
+
+    width: 100%;
+
+    padding: 0 25px;
+    padding-right: 50px;
+    margin-bottom: 30px;
   }
 }
 
@@ -88,6 +98,8 @@
 }
 
 .offers__card img {
+
+
   @include vp-1023 {
     height: 250px;
     min-width: 670px;
@@ -121,6 +133,14 @@
   transform: rotate(-45deg);
 
   background-color: transparent;
+
+  @include vp-767 {
+    width: 4px;
+    height: 4px;
+
+    bottom: 19px;
+    right: 18px;
+  }
 }
 
 .offers__card::before {
@@ -137,16 +157,40 @@
   border-top-left-radius: 3px;
 
   background-color: $color-deep-sky-blue;
+
+  @include vp-767 {
+    width: 40px;
+    height: 41px;
+  }
 }
 
 .offers__card-text {
   position: absolute;
   top: 50px;
   left: 40px;
-  width: 200px;
+  width: 173px;
 
   font-size: 20px;
   font-weight: 400;
   line-height: 30px;
   text-align: left;
+
+  @include vp-1023 {
+    width: 150px;
+
+    top: 37px;
+    left: 46px;
+  }
+
+  @include vp-767 {
+    top: 25px;
+    left: 30px;
+
+    width: 135px;
+
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+  }
 }

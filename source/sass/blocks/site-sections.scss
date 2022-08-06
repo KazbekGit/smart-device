@@ -27,6 +27,16 @@
 .site-sections__item {
   max-width: 220px;
   margin-bottom: 6px;
+  margin-right: 29px;
+
+  @include vp-1023 {
+    width: 210px;
+    margin-bottom: 8px;
+  }
+
+  @include vp-767 {
+
+  }
 }
 
 .site-sections__item:nth-child(4n) {

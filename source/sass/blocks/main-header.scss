@@ -18,9 +18,11 @@
 .main-header__container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
 
   min-height: 120px;
+
+  padding-bottom: 8px;
 
   @include vp-1919 {
     justify-content: space-between;

@@ -2,8 +2,16 @@
   &--full {
     display: block;
 
+    @include vp-1023 {
+      margin-bottom: 5px;
+    }
+
     @include vp-767 {
       display: none;
+    }
+
+    @include vp-767 {
+      margin-bottom: 0;
     }
   }
 
@@ -12,6 +20,7 @@
 
     @include vp-767 {
       display: block;
+      margin-bottom: 5px;
     }
   }
 }

@@ -7,6 +7,8 @@
   margin: 0;
 
   border: none;
+
+  font-family: $ff-PT-mono;
 }
 
 .form header {
@@ -27,7 +29,13 @@
   padding-right: 50px;
 }
 
-.form input,
+.form input {
+  border: none;
+
+  color: $color-default-white;
+  background-color: rgba(4, 20, 39, 0.15);
+}
+
 .form textarea {
   border: none;
 
@@ -37,7 +45,7 @@
 
 .form input::placeholder,
 .form textarea::placeholder {
-   color: $color-default-white;
+  color: $color-default-white;
 }
 
 .form input {
@@ -51,6 +59,8 @@
 }
 
 .form label {
+  position: relative;
+
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -87,6 +97,9 @@
 
 .form input[type="checkbox"] {
   position: absolute;
+  bottom: 40px;
+  left: 35px;
+
   z-index: -1;
   opacity: 0;
 }
@@ -124,6 +137,8 @@
 
   border: none;
   text-transform: uppercase;
+
+  border-radius: 3px;
 
   color: $color-default-white;
   background-color: $color-black-pearl;
