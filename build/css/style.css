@@ -752,7 +752,7 @@ button,
   top: 146px;
   left: calc(50% - 7px);
   width: 500px;
-  height: 800px;
+  min-height: 610px;
   -webkit-transform: translate(-50%);
   -ms-transform: translate(-50%);
   transform: translate(-50%);
@@ -808,8 +808,8 @@ button,
 .form p {
   margin: 0;
   padding: 0;
-  margin-top: 10px;
-  margin-bottom: 40px;
+  margin-top: 4px;
+  margin-bottom: 38px;
   padding-right: 50px;
 }
 
@@ -871,7 +871,7 @@ button,
   -ms-flex-align: center;
   align-items: center;
   position: relative;
-  padding-left: 44px;
+  padding-left: 31px;
   padding-right: 15px;
   font-size: 14px;
   font-weight: 400;
@@ -887,7 +887,7 @@ button,
 .form label::after {
   position: absolute;
   content: "";
-  left: 0;
+  left: 8px;
   top: 0;
   width: 15px;
   height: 15px;
@@ -907,7 +907,7 @@ button,
 .form input[type="checkbox"]:checked + label::before {
   position: absolute;
   content: "";
-  left: 3px;
+  left: 11px;
   top: 4px;
   width: 7px;
   height: 4px;
@@ -1510,6 +1510,7 @@ button,
 
 .feedback__form label::after {
   top: calc(50% + 5px);
+  left: 0;
 }
 
 .feedback__form input[type="checkbox"]:checked + label::before {
@@ -1794,6 +1795,10 @@ html {
   .offers__header {
     padding-left: 100px;
     padding-right: 100px;
+  }
+
+  .offers__card img {
+    width: 250px;
   }
 
   .feedback__container {

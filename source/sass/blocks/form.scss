@@ -24,8 +24,8 @@
   margin: 0;
   padding: 0;
 
-  margin-top: 10px;
-  margin-bottom: 40px;
+  margin-top: 4px;
+  margin-bottom: 38px;
   padding-right: 50px;
 }
 
@@ -66,7 +66,7 @@
   align-items: center;
   position:relative;
 
-  padding-left: 44px;
+  padding-left: 31px;
   padding-right: 15px;
 
   font-size: 14px;
@@ -83,7 +83,7 @@
 .form label::after {
   position: absolute;
   content: "";
-  left: 0;
+  left: 8px;
   top: 0;
 
   width: 15px;
@@ -107,7 +107,7 @@
 .form input[type="checkbox"]:checked + label::before {
   position: absolute;
   content: "";
-  left: 3px;
+  left: 11px;
   top: 4px;
 
   width: 7px;

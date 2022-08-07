@@ -9,6 +9,8 @@ const footerHeaderBlocks = document.querySelectorAll('.footer__header-block');
 const footerContainer = document.querySelector('.footer__container');
 const addTextButton = document.querySelector('.about-us__button');
 const hidedText = document.querySelector('.about-us__description--hide');
+const footerSectionsToggle = document.querySelector('.footer__toggle-wrapper--sections');
+const footerContactsToggle = document.querySelector('.footer__toggle-wrapper--contacts');
 
-export {popupToggle, popup, overlay, popupCloser, userPhones, userName, noJSElements, footerHeaderBlocks, footerContainer, addTextButton, hidedText};
+export {popupToggle, popup, overlay, popupCloser, userPhones, userName, noJSElements, footerHeaderBlocks, footerContainer, addTextButton, hidedText, footerSectionsToggle, footerContactsToggle};
 

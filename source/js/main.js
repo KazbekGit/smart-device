@@ -3,9 +3,10 @@ import {initModals} from './modules/modals/init-modals';
 import {togglePopup} from './modules/popup-toggle';
 import {removeNoJS} from './utils/utils';
 import {addPluses} from './utils/utils';
-import {accorionToggle} from './modules/footer-accordion';
+import {setAccorionToggle} from './modules/footer-accordion';
 import {addText} from './modules/add-text-toggle';
 import {setPhoneMask} from './modules/phone-mask';
+
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -18,10 +19,9 @@ window.addEventListener('DOMContentLoaded', () => {
   addPluses();
   // Modules
   togglePopup();
-  accorionToggle();
+  setAccorionToggle();
   addText();
   setPhoneMask();
-
   // ---------------------------------
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'

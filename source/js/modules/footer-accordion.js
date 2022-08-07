@@ -1,13 +1,11 @@
-import {footerHeaderBlocks} from '../utils/elements';
-
+import {footerHeaderBlocks, footerSectionsToggle, footerContactsToggle} from '../utils/elements';
 
 const allLists = document.querySelectorAll('.closed-list');
 
-const accorionToggle = () => {
+const setAccorionToggle = () => {
   footerHeaderBlocks.forEach((elem) => {
     elem.addEventListener('click', () => {
       const currentList = elem.parentNode.querySelector('.accordion');
-
       if (elem.classList.contains('footer__header-block--add-plus')) {
         allLists.forEach((list) => {
           list.classList.add('closed-list');
@@ -23,7 +21,8 @@ const accorionToggle = () => {
       }
     });
   });
+  footerSectionsToggle.addEventListener();
 };
 
-export {accorionToggle};
+export {setAccorionToggle};
 
