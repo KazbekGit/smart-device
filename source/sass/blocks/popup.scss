@@ -1,14 +1,14 @@
 .popup {
   position: fixed;
 
-  top: 146px;
+  top: 50%;
   left: calc(50% - 7px);
 
   width: 500px;
 
   min-height: 610px;
 
-  transform: translate(-50%);
+  transform: translate(-50%, -50%);
 
   overflow-y: scroll;
 
