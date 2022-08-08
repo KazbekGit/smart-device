@@ -53,14 +53,14 @@
   }
 }
 
-.advantages__item:nth-child(3),
-.advantages__item:nth-child(4) {
+.advantages__item:nth-child(3n),
+.advantages__item:nth-child(4n) {
   @include vp-767 {
     min-height: 325px;
   }
 }
 
-.advantages__item:nth-child(4) .advantages__header {
+.advantages__item:nth-child(4n) .advantages__header {
   @include vp-767 {
     margin-top: 5px;
   }

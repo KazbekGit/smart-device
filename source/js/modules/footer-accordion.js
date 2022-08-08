@@ -46,4 +46,3 @@ const setAccordionToggle = () => {
 };
 
 export {setAccordionToggle};
-

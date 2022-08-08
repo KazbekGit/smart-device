@@ -1086,46 +1086,6 @@ button,
   margin-right: 29px;
 }
 
-/* .site-sections {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  column-gap: 50px;
-
-  height: 140px;
-  min-width: 405px;
-
-  padding: 0;
-  margin: 0;
-
-  list-style: none;
-
-  @include vp-1919 {
-    column-gap: 30px;
-    margin-right: 160px;
-  }
-
-  @include vp-1023 {
-    height: auto;
-    min-width: auto;
-    margin-right: 0;
-  }
-}
-
-.site-sections__item {
-  max-width: 220px;
-  margin-bottom: 10px;
-
-  @include vp-1023 {
-    min-width: 220px;
-  }
-}
-
-.site-sections__item:nth-child(4n) {
-  margin-bottom: 0;
-}
- */
-
 .contacts-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2227,12 +2187,12 @@ html {
     padding-bottom: 35px;
   }
 
-  .advantages__item:nth-child(3),
-  .advantages__item:nth-child(4) {
+  .advantages__item:nth-child(3n),
+  .advantages__item:nth-child(4n) {
     min-height: 325px;
   }
 
-  .advantages__item:nth-child(4) .advantages__header {
+  .advantages__item:nth-child(4n) .advantages__header {
     margin-top: 5px;
   }
 
