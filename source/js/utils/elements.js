@@ -2,7 +2,7 @@ const popupToggle = document.querySelector('.main-header__button');
 const popup = document.querySelector('.popup');
 const overlay = document.querySelector('.overlay');
 const popupCloser = document.querySelector('.popup__closer');
-const userPhones = document.querySelectorAll('#phone');
+const userPhones = document.querySelectorAll('input[name="user-phone"]');
 const userName = document.querySelector('#popup-name');
 const noJSElements = document.querySelectorAll('.nojs');
 const footerHeaderBlocks = document.querySelectorAll('.footer__header-block');
