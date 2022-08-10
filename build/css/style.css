@@ -983,6 +983,7 @@ button,
   -ms-flex-pack: start;
   justify-content: flex-start;
   gap: 30px;
+  max-width: 1920px;
   padding-top: 50px;
   padding-bottom: 55px;
 }
@@ -1120,6 +1121,18 @@ button,
 
 .main-screen {
   position: relative;
+  min-height: 880px;
+  margin-top: -120px;
+  font-family: "Roboto Condensed", "Times New Roman", Times, serif;
+  color: #f2f5f6;
+  background-color: #494824;
+  background-image: url(../img/main-screen-bg-desktop.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+}
+
+.main-screen__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1133,17 +1146,8 @@ button,
   -ms-flex-align: start;
   align-items: flex-start;
   row-gap: 35px;
-  min-height: 880px;
-  margin-top: -120px;
-  padding-left: 475px;
   padding-top: 305px;
-  font-family: "Roboto Condensed", "Times New Roman", Times, serif;
-  color: #f2f5f6;
-  background-color: #494824;
-  background-image: url(../img/main-screen-bg-desktop.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 0 0;
+  padding-left: calc(125px + 350px);
 }
 
 .main-screen__header {
@@ -1754,7 +1758,7 @@ html {
     margin-left: 0;
   }
 
-  .main-screen {
+  .main-screen__container {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
@@ -1764,6 +1768,12 @@ html {
   .advantages__container {
     padding-left: 100px;
     padding-right: 100px;
+  }
+
+  .advantages__item {
+    min-height: 160px;
+    padding-bottom: 27px;
+    min-width: 320px;
   }
 
   .about-us__container {
@@ -1895,15 +1905,19 @@ html {
   }
 
   .main-screen {
+    background-image: url(../img/main-screen-bg-tablet.webp);
+  }
+
+  .main-screen__container {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
     row-gap: 0;
     min-height: 640px;
     margin-top: -100px;
-    padding-top: 180px;
+    padding-top: 300px;
     padding-left: 50px;
-    background-image: url(../img/main-screen-bg-tablet.webp);
+    padding-right: 50px;
   }
 
   .main-screen__header {
@@ -2173,11 +2187,15 @@ html {
   }
 
   .main-screen {
-    min-height: 560px;
-    margin-top: -70px;
-    padding-left: 25px;
-    padding-top: 150px;
     background-image: url(../img/main-screen-bg-mobile.webp);
+  }
+
+  .main-screen__container {
+    min-height: 560px;
+    margin-top: 0px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 200px;
   }
 
   .main-screen__header {
