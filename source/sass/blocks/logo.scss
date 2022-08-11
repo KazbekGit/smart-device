@@ -3,7 +3,6 @@
     display: block;
 
     @include vp-1023 {
-      margin-top: 20px;
       margin-bottom: 5px;
     }
 
@@ -22,8 +21,6 @@
     @include vp-767 {
       display: block;
       margin-bottom: 5px;
-      margin-top: 15px;
-
     }
   }
 }

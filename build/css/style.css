@@ -1795,6 +1795,11 @@ html {
     padding: 0 50px;
   }
 
+  .main-header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
   .main-header__container {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
@@ -1806,7 +1811,6 @@ html {
   }
 
   .logo--full {
-    margin-top: 20px;
     margin-bottom: 5px;
   }
 
@@ -1880,6 +1884,9 @@ html {
   }
 
   .main-screen {
+    min-height: 640px;
+    margin-top: -100px;
+    padding-top: 180px;
     background-image: url(../img/main-screen-bg-tablet.webp);
   }
 
@@ -1888,9 +1895,6 @@ html {
     -ms-flex-pack: start;
     justify-content: flex-start;
     row-gap: 0;
-    min-height: 640px;
-    margin-top: -100px;
-    padding-top: 300px;
     padding-left: 50px;
     padding-right: 50px;
   }
@@ -2034,6 +2038,11 @@ html {
     padding: 0 25px;
   }
 
+  .main-header {
+    padding-top: 13px;
+    padding-bottom: 17px;
+  }
+
   .main-header__container {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
@@ -2051,7 +2060,6 @@ html {
   .logo--brain {
     display: block;
     margin-bottom: 5px;
-    margin-top: 15px;
   }
 
   .contacts {
@@ -2155,15 +2163,15 @@ html {
   }
 
   .main-screen {
+    min-height: 560px;
+    margin-top: -70px;
+    padding-top: 150px;
     background-image: url(../img/main-screen-bg-mobile.webp);
   }
 
   .main-screen__container {
-    min-height: 560px;
-    margin-top: 0px;
     padding-left: 25px;
     padding-right: 25px;
-    padding-top: 200px;
   }
 
   .main-screen__header {

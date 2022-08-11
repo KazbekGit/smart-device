@@ -16,6 +16,16 @@
 
   color: $color-alice-blue;
   background: linear-gradient(180deg, $color-black-pearl 84.9%, $color-black-pearl-transparent 100%);
+
+  @include vp-1023 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  @include vp-767 {
+    padding-top: 13px;
+    padding-bottom: 17px;
+  }
 }
 
 .main-header__container {
