@@ -1361,6 +1361,7 @@ button,
 .offers__card {
   position: relative;
   z-index: 1;
+  overflow-y: scroll;
 }
 
 .offers__card::after {
