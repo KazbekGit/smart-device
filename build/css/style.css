@@ -674,6 +674,8 @@ button,
 .main-header {
   position: sticky;
   top: 0;
+  padding-top: 28px;
+  padding-bottom: 35px;
   font-family: "PT Mono", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -696,28 +698,15 @@ button,
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  row-gap: 20px;
-}
-
-.main-header__nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  gap: 20px;
-  min-height: 120px;
-  padding-bottom: 8px;
+  gap: 30px;
 }
 
 .main-header__button {
   padding: 10px 15px;
+  min-height: 40px;
   border: 2px solid #f2f5f6;
   border-radius: 3px;
   text-transform: uppercase;
@@ -733,7 +722,6 @@ button,
 
 .logo--full {
   display: block;
-  margin-top: 30px;
 }
 
 .logo--brain {
@@ -749,8 +737,8 @@ button,
   -webkit-column-gap: 120px;
   -moz-column-gap: 120px;
   column-gap: 120px;
-  margin-left: 160px;
-  margin-right: 143px;
+  margin-left: 133px;
+  margin-right: 135px;
   max-width: 470px;
 }
 
@@ -1719,12 +1707,6 @@ html {
     padding: 0 50px;
   }
 
-  .main-header__nav {
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-  }
-
   .main-header__button {
     display: block;
   }
@@ -1817,13 +1799,6 @@ html {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-  }
-
-  .main-header__nav {
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    min-height: 100px;
   }
 
   .main-header__button {
@@ -2063,13 +2038,6 @@ html {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-  }
-
-  .main-header__nav {
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    min-height: 70px;
   }
 
   .logo--full {
