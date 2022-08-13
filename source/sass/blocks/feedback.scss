@@ -89,6 +89,7 @@
 }
 
 .feedback__form fieldset {
+  display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   column-gap: 30px;
@@ -101,7 +102,6 @@
   }
 
   @include vp-767 {
-    display: grid;
     grid-template-columns: 1fr;
   }
 }

@@ -37,6 +37,10 @@ html {
 
 .nojs {
   display: block;
+
+  @include vp-767 {
+    display: block;
+  }
 }
 
 .hide-on-mobile {
@@ -51,4 +55,3 @@ html {
     display: block;
   }
 }
-
