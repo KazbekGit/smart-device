@@ -18,6 +18,8 @@
   background: linear-gradient(180deg, $color-black-pearl 84.9%, $color-black-pearl-transparent 100%);
 
   @include vp-1023 {
+    position: static;
+
     padding-top: 20px;
     padding-bottom: 20px;
   }
