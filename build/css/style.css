@@ -880,6 +880,9 @@ button,
   position: relative;
   padding-left: 31px;
   padding-right: 15px;
+  -webkit-box-ordinal-group: 6;
+  -ms-flex-order: 5;
+  order: 5;
   font-size: 14px;
   font-weight: 400;
   line-height: 16px;
@@ -941,6 +944,9 @@ button,
   text-align: center;
   border: none;
   text-transform: uppercase;
+  -webkit-box-ordinal-group: 5;
+  -ms-flex-order: 4;
+  order: 4;
   border-radius: 3px;
   color: #ffffff;
   background-color: #041827;

@@ -1,4 +1,4 @@
-import {popupToggle, popup, overlay, popupCloser, userName} from '../utils/elements';
+import {popupToggle, popup, overlay, popupCloser, userName, popupButton} from '../utils/elements';
 import {enablePageScroll, disablePageScroll} from '../utils/utils';
 import {setPhoneMask} from './phone-mask';
 
@@ -18,6 +18,27 @@ const onEscKeyDown = () => {
   document.addEventListener('keydown', isEscKeyDown, false);
 };
 
+let focusableEls = popup.querySelectorAll('a[href]:not([disabled]), button:not([disabled]), textarea:not([disabled]), input[type="text"]:not([disabled]), input[type="radio"]:not([disabled]), input[type="checkbox"]:not([disabled]), select:not([disabled])');
+let firstFocusableEl = focusableEls[0];
+let lastFocusableEl = focusableEls[focusableEls.length - 1];
+const KEYCODE_TAB = 9;
+
+const setFocus = (e) => {
+  if (e.key === 'Tab' || e.keyCode === KEYCODE_TAB) {
+    if (e.shiftKey) {
+      if (document.activeElement === firstFocusableEl) {
+        lastFocusableEl.focus();
+        e.preventDefault();
+      }
+    } else {
+      if (document.activeElement === lastFocusableEl) {
+        firstFocusableEl.focus();
+        e.preventDefault();
+      }
+    }
+  }
+};
+
 const openPopup = () => {
   popup.classList.remove('closed');
   userName.focus();
@@ -33,6 +54,7 @@ const openPopup = () => {
   overlay.addEventListener('click', closePopup, false);
   popupCloser.addEventListener('click', closePopup, false);
   popupCloser.addEventListener('keydown', isEnterKeyDown, false);
+  popupButton.addEventListener('keydown', setFocus, false);
 };
 
 const closePopup = () => {

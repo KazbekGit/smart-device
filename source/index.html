@@ -164,11 +164,11 @@
             <input type="text" name="user-name" id="name" placeholder="Имя" required>
             <input type="tel" name="user-phone" id="phone" placeholder="Телефон" pattern="[\+][7][(][0-9]{3}[)][0-9]{3}[0-9]{2}[0-9]{2}" required>
             <textarea name="user-question" id="question" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
-            <button type="submit">Задать вопрос</button>
             <input type="checkbox" name="user-agree" id="agree" required>
             <label for="agree">
               <span>Я&nbsp;согласен на&nbsp;обработку персональных данных</span>
             </label>
+            <button type="submit">Задать вопрос</button>
           </fieldset>
         </form>
       </div>
@@ -253,18 +253,18 @@
       <svg class="popup__closer" viewBox="0 0 40 40" width="20" height="20" tabindex="0">
         <use xlink:href="img/sprite_auto.svg#popup-closer"/>
       </svg>
-      <form class="form" action="https://webhook.site/55d9d2a8-a25b-4970-be74-5162a27cfa37" method="post">
+      <form class="form popup__form" action="https://webhook.site/55d9d2a8-a25b-4970-be74-5162a27cfa37" method="post">
         <header>Закажите звонок</header>
         <p>Оставьте контакты, мы&nbsp;проконсультируем вас бесплатно в&nbsp;удобное время</p>
         <fieldset>
           <input type="text" name="user-name" id="popup-name" placeholder="Имя" required>
           <input type="tel" name="user-phone" id="user-phone" placeholder="Телефон" pattern="[\+][7][ (][0-9]{3}[) ][0-9]{3}[-][0-9]{2}[-][0-9]{2}" required>
           <textarea name="user-question" id="popup-question" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
-          <button type="submit">Отправить</button>
           <input type="checkbox" name="form-agree" id="form-agree" required>
           <label for="form-agree">
             <span>Я&nbsp;согласен на&nbsp;обработку персональных данных</span>
           </label>
+          <button type="submit">Отправить</button>
         </fieldset>
       </form>
     </div>
