@@ -2,6 +2,10 @@ import {footerHeaderBlocks, footerAccordionToggles} from '../utils/elements';
 
 const allLists = document.querySelectorAll('.closed-list');
 
+footerHeaderBlocks.forEach((elem) => {
+  elem.classList.add('footerHeaderBlocks');
+});
+
 const setAccordionToggle = () => {
 
   footerHeaderBlocks.forEach((elem) => {
