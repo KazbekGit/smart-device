@@ -28,6 +28,7 @@
   flex-direction: row;
   justify-content: flex-start;
   gap: 30px;
+  row-gap: 60px;
 
   padding-top: 50px;
   padding-bottom: 55px;
@@ -179,11 +180,6 @@
   flex-direction: column;
   flex-wrap: wrap;
 
-  flex-grow: 2;
-  flex-shrink: 0;
-  flex-basis: 376px;
-
-
   @include vp-1919 {
     margin-left: 0;
     flex-basis: 355px;
@@ -211,10 +207,6 @@
 }
 
 .footer__contacts {
-  flex-grow: 0;
-  flex-shrink: 2;
-  flex-basis: 100px;
-
   margin-right: 36px;
 
   @include vp-1919 {
