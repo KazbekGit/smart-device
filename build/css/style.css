@@ -1338,9 +1338,9 @@ button,
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   gap: 85px;
 }
 
@@ -1732,10 +1732,9 @@ html {
 
 @media (max-width: 1919px) {
   .main-header__container {
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    padding: 0 50px;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    padding: 0 250px;
   }
 
   .main-header__button {
@@ -1760,10 +1759,12 @@ html {
   }
 
   .footer__container {
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     padding-left: 40px;
     padding-right: 40px;
+    gap: 200px;
   }
 
   .footer__sections {
@@ -1795,8 +1796,8 @@ html {
   }
 
   .advantages__container {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 280px;
+    padding-right: 280px;
   }
 
   .advantages__item {
@@ -1813,13 +1814,66 @@ html {
 
   .offers__container {
     gap: 30px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 290px;
+    padding-right: 290px;
+  }
+
+  .feedback__container {
+    padding-right: 360px;
+    background-position: 170px 346px;
+  }
+
+  .feedback__form input[type="checkbox"]:checked + label::before {
+    top: calc(50% + 7px);
+  }
+}
+
+@media (max-width: 1699px) {
+  .advantages__container {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+
+  .offers__container {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+
+  .feedback__container {
+    padding-right: 200px;
+    background-position: 160px 346px;
+  }
+}
+
+@media (max-width: 1559px) {
+  .main-header__container {
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    padding: 0 150px;
+  }
+
+  .footer__container {
+    gap: 100px;
+  }
+
+  .advantages__container {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+
+  .offers__container {
+    padding-left: 150px;
+    padding-right: 150px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    gap: 60px;
   }
 
   .offers__header {
-    padding-left: 100px;
-    padding-right: 100px;
+    text-align: center;
+    padding-left: 200px;
+    padding-right: 200px;
   }
 
   .offers__card img {
@@ -1827,13 +1881,45 @@ html {
   }
 
   .feedback__container {
-    padding-right: 100px;
+    padding-right: 180px;
     background-size: 25%;
-    background-position: 50px 346px;
+    background-position: 100px 346px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .main-header__container {
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    padding: 0 50px;
   }
 
-  .feedback__form input[type="checkbox"]:checked + label::before {
-    top: calc(50% + 7px);
+  .footer__container {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  .advantages__container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .offers__container {
+    padding-left: 100px;
+    padding-right: 100px;
+    gap: 30px;
+  }
+
+  .offers__header {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .feedback__container {
+    padding-right: 100px;
+    background-position: 50px 346px;
   }
 }
 
@@ -2027,6 +2113,7 @@ html {
   }
 
   .offers__header {
+    text-align: left;
     padding: 0 50px;
     margin-bottom: 37px;
   }

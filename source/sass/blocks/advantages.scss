@@ -18,8 +18,23 @@
   gap: 30px;
 
   @include vp-1919 {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 280px;
+    padding-right: 280px;
+  }
+
+  @include vp-1700 {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+
+  @include vp-1560 {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+
+  @include vp-1200 {
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
   @include vp-767 {

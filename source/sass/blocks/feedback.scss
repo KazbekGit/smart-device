@@ -19,9 +19,23 @@
   background-position: 350px 246px;
 
   @include vp-1919 {
-    padding-right: 100px;
+    padding-right: 360px;
+    background-position: 170px 346px;
+  }
 
+  @include vp-1700 {
+    padding-right: 200px;
+    background-position: 160px 346px;
+  }
+
+  @include vp-1560 {
+    padding-right: 180px;
     background-size: 25%;
+    background-position: 100px 346px;
+  }
+
+  @include vp-1200 {
+    padding-right: 100px;
     background-position: 50px 346px;
   }
 

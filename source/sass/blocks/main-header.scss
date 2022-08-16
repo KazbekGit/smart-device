@@ -38,7 +38,19 @@
   gap: 30px;
 
   @include vp-1919 {
-    justify-content: space-between;
+    justify-content: space-around;
+
+    padding: 0 250px;
+  }
+
+  @include vp-1560 {
+    justify-content: space-around;
+
+    padding: 0 150px;
+  }
+
+  @include vp-1200 {
+    justify-content: space-around;
 
     padding: 0 50px;
   }

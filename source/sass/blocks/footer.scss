@@ -34,9 +34,22 @@
   padding-bottom: 55px;
 
   @include vp-1919 {
-    justify-content: space-around;
+    justify-content: center;
     padding-left: 40px;
     padding-right: 40px;
+    gap: 200px;
+  }
+
+  @include vp-1700 {
+  }
+
+  @include vp-1560 {
+    gap: 100px;
+  }
+
+  @include vp-1200 {
+    justify-content: space-between;
+    gap: 30px;
   }
 
   @include vp-1023 {
