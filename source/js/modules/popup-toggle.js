@@ -18,7 +18,7 @@ const onEscKeyDown = () => {
   document.addEventListener('keydown', isEscKeyDown, false);
 };
 
-let focusableEls = popup.querySelectorAll('a[href]:not([disabled]), button:not([disabled]), textarea:not([disabled]), input[type="text"]:not([disabled]), input[type="radio"]:not([disabled]), input[type="checkbox"]:not([disabled]), select:not([disabled])');
+let focusableEls = popup.querySelectorAll('.popup__closer, a[href]:not([disabled]), button:not([disabled]), textarea:not([disabled]), input[type="text"]:not([disabled]), input[type="radio"]:not([disabled]), input[type="checkbox"]:not([disabled]), select:not([disabled])');
 let firstFocusableEl = focusableEls[0];
 let lastFocusableEl = focusableEls[focusableEls.length - 1];
 const KEYCODE_TAB = 9;
@@ -54,7 +54,7 @@ const openPopup = () => {
   overlay.addEventListener('click', closePopup, false);
   popupCloser.addEventListener('click', closePopup, false);
   popupCloser.addEventListener('keydown', isEnterKeyDown, false);
-  popupButton.addEventListener('keydown', setFocus, false);
+  popup.addEventListener('keydown', setFocus, false);
 };
 
 const closePopup = () => {
