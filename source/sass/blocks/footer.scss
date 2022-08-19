@@ -40,11 +40,8 @@
     gap: 200px;
   }
 
-  @include vp-1700 {
-  }
-
   @include vp-1560 {
-    gap: 100px;
+    gap: 50px;
   }
 
   @include vp-1200 {
@@ -91,8 +88,6 @@
   @include vp-767 {
     flex-direction: column;
     justify-content: space-between;
-
-    margin-bottom: 19px;
   }
 }
 
@@ -188,10 +183,25 @@
   }
 }
 
+.footer__sections-block {
+  display: flex;
+  row-gap: 11px;
+  column-gap: 35px;
+
+  min-width: 476px;
+
+  @include vp-1200 {
+    min-width: 320px;
+    flex-direction: column;
+  }
+  @include vp-767 {
+    min-width: 0;
+  }
+}
+
 .footer__sections {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
 
   @include vp-1919 {
     margin-left: 0;
@@ -218,7 +228,6 @@
 }
 
 .footer__contacts {
-  margin-left: 90px;
 
   @include vp-1919 {
     margin-left: 0;

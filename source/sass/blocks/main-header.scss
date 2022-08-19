@@ -84,6 +84,9 @@
   color: $color-alice-blue;
   background-color: transparent;
 
+  margin-left: auto;
+  margin-right: 60px;
+
   @include vp-1919 {
     display: block;
   }
