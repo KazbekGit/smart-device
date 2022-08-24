@@ -719,7 +719,7 @@ button,
   color: #f2f5f6;
   background-color: transparent;
   margin-left: auto;
-  margin-right: 60px;
+  margin-right: 40px;
 }
 
 .logo--full {
@@ -741,7 +741,7 @@ button,
   -moz-column-gap: 120px;
   column-gap: 120px;
   row-gap: 20px;
-  max-width: 470px;
+  max-width: 461px;
 }
 
 .contacts__link {
@@ -1751,6 +1751,7 @@ html {
   }
 
   .main-header__button {
+    margin-left: 0;
     display: block;
   }
 
@@ -1759,9 +1760,9 @@ html {
   }
 
   .contacts {
-    -webkit-column-gap: 0;
-    -moz-column-gap: 0;
-    column-gap: 0;
+    -webkit-column-gap: 80px;
+    -moz-column-gap: 80px;
+    column-gap: 80px;
     margin-left: 0;
     margin-right: 30px;
     padding-bottom: 0;
@@ -1771,7 +1772,7 @@ html {
     margin-right: 40px;
   }
 
-  .contacts a:last-child {
+  .contacts a:nth-child(2n) {
     margin-right: 0;
   }
 
@@ -1875,6 +1876,18 @@ html {
     -ms-flex-pack: distribute;
     justify-content: space-around;
     padding: 0 150px;
+  }
+
+  .main-header__button {
+    margin-right: 0;
+  }
+
+  .contacts {
+    -webkit-column-gap: 0;
+    -moz-column-gap: 0;
+    column-gap: 0;
+    margin-right: 0;
+    max-width: 411px;
   }
 
   .footer__container {
@@ -1991,8 +2004,9 @@ html {
   }
 
   .contacts {
-    margin-right: 28px;
+    margin-right: 11px;
     padding-bottom: 15px;
+    max-width: 100px;
   }
 
   .contacts__text {
